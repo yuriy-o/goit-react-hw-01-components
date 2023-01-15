@@ -11,10 +11,11 @@ import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, data }) => {
   const dataLength = data.length;
-  console.log('dataLength', dataLength);
+  const toUpperTitle = title.toUpperCase();
+
   return (
     <Section>
-      <Title>{title}</Title>
+      <Title>{toUpperTitle}</Title>
 
       <List>
         {data.map(({ id, label, percentage }) => {
