@@ -1,4 +1,6 @@
 import { Profile } from './Profile/Profile';
+import { Profile2 } from './Profile2/Profile2';
+import user from './user.json';
 
 import { Statistics } from './Statistics/Statistics';
 import data from './data.json';
@@ -11,6 +13,13 @@ export const App = () => {
   return (
     <>
       <Profile />
+      <Profile2
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
       <Statistics title="Upload stats" data={data} />
       <FriendList friends={friends} />;
       <TransactionHistory items={transactions} />;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   Section,
   Title,
@@ -6,8 +7,6 @@ import {
   Label,
   Percentage,
 } from './Statistics.styled';
-
-import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, data }) => {
   const dataLength = data.length;
