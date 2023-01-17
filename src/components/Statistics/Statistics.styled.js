@@ -17,6 +17,7 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   font-size: 28px;
+  text-transform: uppercase;
 `;
 
 export const List = styled.ul`

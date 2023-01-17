@@ -11,11 +11,10 @@ import { getRandomHexColor } from '../../utils/getRandomHexColor';
 
 export const Statistics = ({ title, data }) => {
   const dataLength = data.length;
-  const toUpperTitle = title.toUpperCase();
 
   return (
     <Section>
-      <Title>{toUpperTitle}</Title>
+      {title && <Title>{title}</Title>}
 
       <List>
         {data.map(({ id, label, percentage }) => {
