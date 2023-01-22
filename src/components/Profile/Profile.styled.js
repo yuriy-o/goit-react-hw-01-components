@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Profile = styled.div`
+export const Section = styled.div`
   width: 285px;
   min-height: 100%;
 
